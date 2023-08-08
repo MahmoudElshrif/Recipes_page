@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(8, 7, 14);
+    color: rgb(216, 216, 216);
+    /* font-size: large; */
+    font-family: Inter,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+img {
+    margin-left: 30px;
+    border-radius: 3%;
+}
+h1,h2 {
+    border-width: 0px 0px 3px 0px;
+    border-radius: 3px;
+    border-color: rgb(18, 16, 31);
+    border-style: solid;
+    margin-left: 10px;
+    padding-bottom: 0.5%;
+}
+
+p {
+    margin-left: 40px;
+}
+
+a {
+    color: rgb(216, 216, 216);
+}
