@@ -1,7 +1,6 @@
 body {
     background-color: rgb(8, 7, 14);
     color: rgb(216, 216, 216);
-    /* font-size: large; */
     font-family: Inter,Helvetica Neue,Helvetica,Arial,sans-serif;
     border-bottom: 3px solid rgb(18, 16, 31);
     margin-bottom: 60px;
@@ -18,9 +17,13 @@ h1,h2 {
     border-color: rgb(18, 16, 31);
     border-style: solid;
 }
+h1 {
+    margin-left: -5%;
+}
 
-.content {
-    padding: 0 1%;
+img.recipe-preview {
+    height: 300px;
+    width: auto;
 }
 
 /* h1 {
