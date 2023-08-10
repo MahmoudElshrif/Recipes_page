@@ -26,12 +26,12 @@ h1 {
     margin-left: -5%;
 }
 
-@keyframes hov{
+@keyframes prevhov{
     /* from {transform: scale(1);} */
     to {transform: scale(1.03) rotateZ(-1deg);}
 }
 
-@keyframes unhov{
+@keyframes prevunhov{
     from {transform: scale(1.03) rotateZ(-1deg);}
     to {transform: scale(1) rotateZ(0deg);}
 }
@@ -41,39 +41,53 @@ img.recipe-preview {
     width: auto;
     margin: 1%;
     border-radius: 3%;
-    animation: unhov 0.1s forwards ease-out;
+    animation: prevunhov 0.1s forwards ease-out;
     display: flex;
 }
 
 
 img.recipe-preview:hover {
-    animation: hov 0.1s forwards ease-out;
+    animation: prevhov 0.1s forwards ease-out;
 }
 
-.links {
-    
-}
-
-/* .link-card {
-    display: flex;
-} */
 
 .link-card a {
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
 }
 
+@keyframes linkhov {
+    to {margin: 0 30px;transform: scale(1.1);}
+}
+
+@keyframes linkunhov {
+    from {margin: 0 30px;transform: scale(1.1);}
+    to {margin: initial;transform: scale(1);}
+}
+
+.link-card {
+    width: fit-content;
+    display: inline-block;
+    animation: linkunhov 0.3s forwards ease-out;
+}
+
+
+.link-card:hover {
+    transition: margin 0.3s;
+    animation: linkhov 0.3s forwards ease-out;
+}
 
 .links img {
     width: 150px;
     aspect-ratio: 4/5;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 10px ;
 }
 
 p,li {
     margin-bottom: 10px;
 }
-
 
 a {
     color: rgb(216, 216, 216);
