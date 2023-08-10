@@ -7,10 +7,15 @@ body {
     padding: 0 5%;
     
 }
-img {
-    margin: 1%;
-    border-radius: 3%;
+
+
+.desc {
+    display: flex;
 }
+.desc .desc-text {
+    margin-left: 30px;
+}
+
 h1,h2 {
     border-width: 0px 0px 3px 0px;
     border-radius: 3px;
@@ -21,14 +26,48 @@ h1 {
     margin-left: -5%;
 }
 
+@keyframes hov{
+    /* from {transform: scale(1);} */
+    to {transform: scale(1.03) rotateZ(-1deg);}
+}
+
+@keyframes unhov{
+    from {transform: scale(1.03) rotateZ(-1deg);}
+    to {transform: scale(1) rotateZ(0deg);}
+}
+
 img.recipe-preview {
     height: 300px;
     width: auto;
+    margin: 1%;
+    border-radius: 3%;
+    animation: unhov 0.1s forwards ease-out;
+    display: flex;
 }
 
-/* h1 {
-    margin: 1em;
+
+img.recipe-preview:hover {
+    animation: hov 0.1s forwards ease-out;
+}
+
+.links {
+    
+}
+
+/* .link-card {
+    display: flex;
 } */
+
+.link-card a {
+    text-decoration: none;
+}
+
+
+.links img {
+    width: 150px;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+}
 
 p,li {
     margin-bottom: 10px;
