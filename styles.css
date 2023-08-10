@@ -67,6 +67,7 @@ img.recipe-preview:hover {
     width: 150px;
     aspect-ratio: 4/5;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 p,li {
