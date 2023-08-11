@@ -31,10 +31,11 @@ body {
 }
 
 img.recipe-preview {
-    height: 300px;
-    width: auto;
+    width: 300px;
+    height: auto;
     margin: 30px;
     border-radius: 30px;
+    align-self: center;
     animation: prevunhov 0.1s forwards ease-out;
 }
 

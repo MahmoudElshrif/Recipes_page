@@ -1,0 +1,18 @@
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.one {
+    background-color: blue;
+}
+.two {
+    background-color: red;
+}
+
+.one,.two {
+    flex: 0 1 40px;
+    color: white;
+    text-align: center;
+}
