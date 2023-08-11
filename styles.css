@@ -2,12 +2,12 @@ body {
     background-color: rgb(8, 7, 14);
     color: rgb(216, 216, 216);
     font-family: Inter,Helvetica Neue,Helvetica,Arial,sans-serif;
+    border-bottom: 3px solid rgb(18, 16, 31);
+    margin-bottom: 60px;
     
 }
 
 .content {
-    border-bottom: 3px solid rgb(18, 16, 31);
-    margin-bottom: 60px;
     padding: 0 5%;
 
 }
@@ -88,6 +88,10 @@ img.recipe-preview:hover {
 .link-card:hover {
     transition: margin 0.3s;
     animation: linkhov 0.3s forwards ease-out;
+}
+
+.links {
+    margin-left: 30px;
 }
 
 .links img {
