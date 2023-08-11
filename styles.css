@@ -69,12 +69,11 @@ img.recipe-preview:hover {
 }
 
 @keyframes linkhov {
-    /* 50% {filter: } */
-    to {margin: 0 10px;transform: scale(1.07);}
+    to {margin: 0 5px;transform: scale(1.08);}
 }
 
 @keyframes linkunhov {
-    from {margin: 0 10px;transform: scale(1.07);}
+    from {margin: 0 4px;transform: scale(1.07);}
     to {margin: initial;transform: scale(1);}
 }
 
@@ -86,12 +85,11 @@ img.recipe-preview:hover {
 
 
 .link-card:hover {
-    transition: margin 0.3s;
     animation: linkhov 0.3s forwards ease-out;
 }
 
 .links {
-    margin-left: 30px;
+    margin: 30px;
 }
 
 .links img {
