@@ -3,13 +3,11 @@ body {
     color: rgb(216, 216, 216);
     font-family: Inter,Helvetica Neue,Helvetica,Arial,sans-serif;
     border-bottom: 3px solid rgb(18, 16, 31);
-    margin-bottom: 60px;
-    
+    margin-bottom: 60px;    
 }
 
 .content {
     padding: 0 5%;
-
 }
 
 .desc {
@@ -20,6 +18,7 @@ body {
     margin-left: 30px;
     flex: 0.9;
 }
+
 @keyframes prevhov{
     /* from {transform: scale(1);} */
     to {transform: scale(1.03) rotateZ(-1deg);}
@@ -50,12 +49,13 @@ h1,h2 {
     position: sticky;
     background-color: rgb(8, 7, 14);
     top:0;
-    width: 100%;
+    width: auto;
     z-index: 100;
 }
 
 .header a {
     text-decoration: none;
+    margin-left: 10px;
 }
 
 img.recipe-preview:hover {  
@@ -91,6 +91,9 @@ img.recipe-preview:hover {
 
 .links {
     margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
 .links img {

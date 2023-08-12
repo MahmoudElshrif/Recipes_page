@@ -1,18 +1,9 @@
-.content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+body {
+    background: linear-gradient(10deg,red 0%,lime 100%);
+    color: red;
 }
 
-.one {
-    background-color: blue;
-}
-.two {
-    background-color: red;
-}
-
-.one,.two {
-    flex: 0 1 40px;
-    color: white;
-    text-align: center;
+img {
+    height:100px;
+    width: 700px;
 }
